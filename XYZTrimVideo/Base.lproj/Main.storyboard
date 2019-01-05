@@ -1,24 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gvv-mw-07X">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--SelectVC-->
+        <scene sceneID="aC2-M2-i98">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="gvv-mw-07X" customClass="selectVC" customModule="XYZTrimVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fLV-2f-dgd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5v-S4-1Mx">
+                                <rect key="frame" x="156" y="152" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="直接弹出"/>
+                                <connections>
+                                    <action selector="demoBTN:" destination="gvv-mw-07X" eventType="touchUpInside" id="WH2-4j-ZrG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izK-Ec-ofx">
+                                <rect key="frame" x="156" y="451" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="选择视频"/>
+                                <connections>
+                                    <action selector="选择视频BTN:" destination="gvv-mw-07X" eventType="touchUpInside" id="56G-l7-TmH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="svb-Uo-ndG"/>
                     </view>
+                    <connections>
+                        <segue destination="alh-fb-QmT" kind="presentation" id="xTe-Sg-soU"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eq7-eF-nvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-721" y="27"/>
+        </scene>
+        <!--Trim VideoVC-->
+        <scene sceneID="XzT-h3-2tJ">
+            <objects>
+                <viewController storyboardIdentifier="TrimVideoVCID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="alh-fb-QmT" customClass="TrimVideoVC" customModule="XYZTrimVideo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vzW-Ft-F1W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ArV-jJ-Ru4">
+                                <rect key="frame" x="20" y="90" width="335" height="487"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8M5-pr-9tR">
+                                        <rect key="frame" x="152.5" y="429" width="30" height="30"/>
+                                        <state key="normal" title="play"/>
+                                        <connections>
+                                            <action selector="playBTN:" destination="alh-fb-QmT" eventType="touchUpInside" id="Jbp-EU-Foj"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8M5-pr-9tR" secondAttribute="bottom" constant="28" id="ALf-xR-WBq"/>
+                                    <constraint firstItem="8M5-pr-9tR" firstAttribute="centerX" secondItem="ArV-jJ-Ru4" secondAttribute="centerX" id="NSv-ml-L5p"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbN-mC-X7m">
+                                <rect key="frame" x="27" y="37" width="31" height="30"/>
+                                <state key="normal" title="关闭"/>
+                                <connections>
+                                    <action selector="关闭BTN:" destination="alh-fb-QmT" eventType="touchUpInside" id="x7K-qU-c7A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dJh-1a-Sfc">
+                                <rect key="frame" x="310" y="37" width="45" height="30"/>
+                                <state key="normal" title="export">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="ExportBTN:" destination="alh-fb-QmT" eventType="touchUpInside" id="oYu-gr-hXI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ArV-jJ-Ru4" firstAttribute="leading" secondItem="47W-AR-rTJ" secondAttribute="leading" constant="20" id="2MC-Yh-Lrj"/>
+                            <constraint firstItem="ArV-jJ-Ru4" firstAttribute="centerX" secondItem="vzW-Ft-F1W" secondAttribute="centerX" id="3s4-Ax-6ep"/>
+                            <constraint firstItem="sbN-mC-X7m" firstAttribute="leading" secondItem="47W-AR-rTJ" secondAttribute="leading" constant="27" id="8op-x2-XcU"/>
+                            <constraint firstItem="dJh-1a-Sfc" firstAttribute="trailing" secondItem="ArV-jJ-Ru4" secondAttribute="trailing" id="Ssn-R9-ZbL"/>
+                            <constraint firstItem="sbN-mC-X7m" firstAttribute="top" secondItem="47W-AR-rTJ" secondAttribute="top" constant="17" id="UKN-r9-pcl"/>
+                            <constraint firstItem="ArV-jJ-Ru4" firstAttribute="top" secondItem="sbN-mC-X7m" secondAttribute="bottom" constant="23" id="V1R-z2-8vV"/>
+                            <constraint firstItem="sbN-mC-X7m" firstAttribute="baseline" secondItem="dJh-1a-Sfc" secondAttribute="baseline" id="sMa-8n-mp0"/>
+                            <constraint firstItem="ArV-jJ-Ru4" firstAttribute="centerY" secondItem="vzW-Ft-F1W" secondAttribute="centerY" id="yDy-c8-Z0r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="47W-AR-rTJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="previewContainer" destination="ArV-jJ-Ru4" id="49H-U5-ieM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z0B-YN-vEl" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="27.436281859070466"/>
         </scene>
     </scenes>
 </document>

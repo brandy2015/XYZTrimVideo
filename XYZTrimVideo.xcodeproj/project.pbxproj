@@ -7,21 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6956C0A21E0451D0019479B /* XYZTrimVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6956C0921E0451D0019479B /* XYZTrimVideo.swift */; };
+		D6956C0C21E05A820019479B /* selectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6956C0B21E05A820019479B /* selectVC.swift */; };
 		D6AB152C21DF8A1E000B1F50 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AB152B21DF8A1E000B1F50 /* AppDelegate.swift */; };
-		D6AB152E21DF8A1E000B1F50 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AB152D21DF8A1E000B1F50 /* ViewController.swift */; };
+		D6AB152E21DF8A1E000B1F50 /* TrimVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6AB152D21DF8A1E000B1F50 /* TrimVideoVC.swift */; };
 		D6AB153121DF8A1E000B1F50 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AB152F21DF8A1E000B1F50 /* Main.storyboard */; };
 		D6AB153321DF8A1F000B1F50 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6AB153221DF8A1F000B1F50 /* Assets.xcassets */; };
 		D6AB153621DF8A1F000B1F50 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6AB153421DF8A1F000B1F50 /* LaunchScreen.storyboard */; };
+		D6AB154D21DF8A42000B1F50 /* UIImage+BundleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB154421DF8A42000B1F50 /* UIImage+BundleImage.m */; };
+		D6AB154E21DF8A42000B1F50 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = D6AB154721DF8A42000B1F50 /* .gitkeep */; };
+		D6AB154F21DF8A42000B1F50 /* YGCTrimVideoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB154821DF8A42000B1F50 /* YGCTrimVideoControlView.m */; };
+		D6AB155021DF8A42000B1F50 /* YGCThumbCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB154921DF8A42000B1F50 /* YGCThumbCollectionViewCell.m */; };
+		D6AB155121DF8A42000B1F50 /* UIView+YGCFrameUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB154A21DF8A42000B1F50 /* UIView+YGCFrameUtil.m */; };
+		D6AB155221DF8A42000B1F50 /* YGCTrimVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AB154C21DF8A42000B1F50 /* YGCTrimVideoView.m */; };
+		D6AB155421DF8A49000B1F50 /* defaultImage.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D6AB155321DF8A49000B1F50 /* defaultImage.bundle */; };
+		D6AB155821E0295D000B1F50 /* zuxian.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = D6AB155521E023D4000B1F50 /* zuxian.MP4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D6956C0921E0451D0019479B /* XYZTrimVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZTrimVideo.swift; sourceTree = "<group>"; };
+		D6956C0B21E05A820019479B /* selectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectVC.swift; sourceTree = "<group>"; };
 		D6AB152821DF8A1E000B1F50 /* XYZTrimVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYZTrimVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6AB152B21DF8A1E000B1F50 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6AB152D21DF8A1E000B1F50 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6AB152D21DF8A1E000B1F50 /* TrimVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrimVideoVC.swift; sourceTree = "<group>"; };
 		D6AB153021DF8A1E000B1F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6AB153221DF8A1F000B1F50 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6AB153521DF8A1F000B1F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6AB153721DF8A1F000B1F50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6AB153D21DF8A34000B1F50 /* XYZTrimVideo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XYZTrimVideo-Bridging-Header.h"; sourceTree = "<group>"; };
+		D6AB154221DF8A42000B1F50 /* YGCTrimVideoControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCTrimVideoControlView.h; sourceTree = "<group>"; };
+		D6AB154321DF8A42000B1F50 /* YGCTrimVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCTrimVideoView.h; sourceTree = "<group>"; };
+		D6AB154421DF8A42000B1F50 /* UIImage+BundleImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BundleImage.m"; sourceTree = "<group>"; };
+		D6AB154521DF8A42000B1F50 /* UIView+YGCFrameUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YGCFrameUtil.h"; sourceTree = "<group>"; };
+		D6AB154621DF8A42000B1F50 /* YGCThumbCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YGCThumbCollectionViewCell.h; sourceTree = "<group>"; };
+		D6AB154721DF8A42000B1F50 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		D6AB154821DF8A42000B1F50 /* YGCTrimVideoControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGCTrimVideoControlView.m; sourceTree = "<group>"; };
+		D6AB154921DF8A42000B1F50 /* YGCThumbCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGCThumbCollectionViewCell.m; sourceTree = "<group>"; };
+		D6AB154A21DF8A42000B1F50 /* UIView+YGCFrameUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YGCFrameUtil.m"; sourceTree = "<group>"; };
+		D6AB154B21DF8A42000B1F50 /* UIImage+BundleImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BundleImage.h"; sourceTree = "<group>"; };
+		D6AB154C21DF8A42000B1F50 /* YGCTrimVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YGCTrimVideoView.m; sourceTree = "<group>"; };
+		D6AB155321DF8A49000B1F50 /* defaultImage.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = defaultImage.bundle; sourceTree = "<group>"; };
+		D6AB155521E023D4000B1F50 /* zuxian.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = zuxian.MP4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +64,7 @@
 		D6AB151F21DF8A1E000B1F50 = {
 			isa = PBXGroup;
 			children = (
+				D6AB153D21DF8A34000B1F50 /* XYZTrimVideo-Bridging-Header.h */,
 				D6AB152A21DF8A1E000B1F50 /* XYZTrimVideo */,
 				D6AB152921DF8A1E000B1F50 /* Products */,
 			);
@@ -54,14 +81,37 @@
 		D6AB152A21DF8A1E000B1F50 /* XYZTrimVideo */ = {
 			isa = PBXGroup;
 			children = (
+				D6AB155521E023D4000B1F50 /* zuxian.MP4 */,
+				D6AB154121DF8A42000B1F50 /* Classes */,
 				D6AB152B21DF8A1E000B1F50 /* AppDelegate.swift */,
-				D6AB152D21DF8A1E000B1F50 /* ViewController.swift */,
+				D6956C0B21E05A820019479B /* selectVC.swift */,
+				D6AB152D21DF8A1E000B1F50 /* TrimVideoVC.swift */,
 				D6AB152F21DF8A1E000B1F50 /* Main.storyboard */,
 				D6AB153221DF8A1F000B1F50 /* Assets.xcassets */,
 				D6AB153421DF8A1F000B1F50 /* LaunchScreen.storyboard */,
 				D6AB153721DF8A1F000B1F50 /* Info.plist */,
 			);
 			path = XYZTrimVideo;
+			sourceTree = "<group>";
+		};
+		D6AB154121DF8A42000B1F50 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D6956C0921E0451D0019479B /* XYZTrimVideo.swift */,
+				D6AB155321DF8A49000B1F50 /* defaultImage.bundle */,
+				D6AB154721DF8A42000B1F50 /* .gitkeep */,
+				D6AB154B21DF8A42000B1F50 /* UIImage+BundleImage.h */,
+				D6AB154421DF8A42000B1F50 /* UIImage+BundleImage.m */,
+				D6AB154521DF8A42000B1F50 /* UIView+YGCFrameUtil.h */,
+				D6AB154A21DF8A42000B1F50 /* UIView+YGCFrameUtil.m */,
+				D6AB154621DF8A42000B1F50 /* YGCThumbCollectionViewCell.h */,
+				D6AB154921DF8A42000B1F50 /* YGCThumbCollectionViewCell.m */,
+				D6AB154221DF8A42000B1F50 /* YGCTrimVideoControlView.h */,
+				D6AB154821DF8A42000B1F50 /* YGCTrimVideoControlView.m */,
+				D6AB154321DF8A42000B1F50 /* YGCTrimVideoView.h */,
+				D6AB154C21DF8A42000B1F50 /* YGCTrimVideoView.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +146,7 @@
 				TargetAttributes = {
 					D6AB152721DF8A1E000B1F50 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -122,9 +173,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6AB155821E0295D000B1F50 /* zuxian.MP4 in Resources */,
 				D6AB153621DF8A1F000B1F50 /* LaunchScreen.storyboard in Resources */,
 				D6AB153321DF8A1F000B1F50 /* Assets.xcassets in Resources */,
 				D6AB153121DF8A1E000B1F50 /* Main.storyboard in Resources */,
+				D6AB155421DF8A49000B1F50 /* defaultImage.bundle in Resources */,
+				D6AB154E21DF8A42000B1F50 /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +189,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6AB152E21DF8A1E000B1F50 /* ViewController.swift in Sources */,
+				D6AB155121DF8A42000B1F50 /* UIView+YGCFrameUtil.m in Sources */,
+				D6AB155221DF8A42000B1F50 /* YGCTrimVideoView.m in Sources */,
+				D6AB154D21DF8A42000B1F50 /* UIImage+BundleImage.m in Sources */,
+				D6956C0C21E05A820019479B /* selectVC.swift in Sources */,
+				D6956C0A21E0451D0019479B /* XYZTrimVideo.swift in Sources */,
+				D6AB152E21DF8A1E000B1F50 /* TrimVideoVC.swift in Sources */,
+				D6AB154F21DF8A42000B1F50 /* YGCTrimVideoControlView.m in Sources */,
 				D6AB152C21DF8A1E000B1F50 /* AppDelegate.swift in Sources */,
+				D6AB155021DF8A42000B1F50 /* YGCThumbCollectionViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5VG453CHM;
 				INFOPLIST_FILE = XYZTrimVideo/Info.plist;
@@ -291,6 +353,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangqian.XYZTrimVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XYZTrimVideo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5VG453CHM;
 				INFOPLIST_FILE = XYZTrimVideo/Info.plist;
@@ -309,6 +374,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangqian.XYZTrimVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "XYZTrimVideo-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
